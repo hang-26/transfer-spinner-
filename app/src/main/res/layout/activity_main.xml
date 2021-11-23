@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:text="Length"
+        android:textSize="@dimen/sp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textStyle="bold"
+        android:textColor="@color/Yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv"
+        android:text="I want to convert:"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_value"
+        android:background="@drawable/custum_value"
+        android:inputType = "numberDecimal"
+        android:hint="nhập giá trị"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:padding="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spn_list_one"
+        android:background="@drawable/custum_value"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:padding="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"/>
+    <TextView
+        android:id="@+id/tv_to"
+        android:text="To:"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spn_list_two"
+        android:background="@drawable/custum_value"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:padding="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"/>
+    <RelativeLayout
+        android:background="@drawable/custum_two"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/btn_result"
+            android:text="Result:"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="@dimen/sp_20"
+            android:padding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_60"/>
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="0,0"
+            android:textSize="@dimen/sp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_comment"
+        android:text="Extented conversion"
+        android:textSize="@dimen/sp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
